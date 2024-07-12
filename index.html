@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Nome do Item" required>
+            <input type="number" id="itemQuantity" placeholder="Quantidade" required>
+            <input type="number" id="itemPrice" placeholder="Valor (R$)" step="0.01" required>
+            <select id="itemRoom" required>
+                <option value="" disabled selected>Selecione o Cômodo</option>
+                <option value="Banheiro">Banheiro</option>
+                <option value="Cozinha">Cozinha</option>
+                <option value="Alimento">Alimento</option>
+                <option value="Limpeza">Limpeza</option>
+            </select>
+            <button type="submit">Adicionar Item</button>
+        </form>
+        <div id="shoppingList"></div>
+        <h2>Total: R$ <span id="totalPrice">0.00</span></h2>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
