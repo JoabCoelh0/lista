@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" midia="all">
+    <link rel="stylesheet" href="style/style.css" midia="all">
     <title>ShoppingList</title>
 </head>
 
@@ -12,11 +12,11 @@
     <main id="principal">
         <section id="search">
             <div class="input">
-                <input type="search" name="search" id="search" placeholder="Digite o produto" required>
+                <input type="search" name="search" id="pesquisa" placeholder="Digite o produto" required>
             </div>
             <div class="botao">
                 <button type="submit" class="add" onclick="add()">
-                    <img src="/126510.png" alt="Icone do carrinho" width="30px">
+                    <img src="/v3/img/126510.png" alt="Icone do carrinho" width="30px">
                 </button>
             </div>
         </section>
@@ -25,11 +25,11 @@
     <section id="resultados"> 
         <div class="card">
             <div class="fotos">
-                <img src="/morangos-300x235.png" alt="Bandeja de morangos">
+                <img src="img/morangos-300x235.png" alt="Bandeja de morangos">
             </div>
             <div class="informacoes">
                 <div class="nome_produto">
-                    <h2>Bandeja de morangos</h2>
+                    <h2 id="">Bandeja de morangos</h2>
                 </div>
                 <div class="classe_produto">
                     <h2>Unidade</h2>
@@ -39,7 +39,7 @@
                         <h2>R$</h2>
                     </div>
                     <div class="valor">
-                        <h2>15,00</h2>
+                        <h2 id="preco">15,00</h2>
                     </div>
                 </div>
             </div>
@@ -47,24 +47,21 @@
                 <div class="excluir_produto">
                     <button>x</button>
                 </div>
-                <div class="quantidade_produto">
-                    <div class="diminuir">
-                        <button>-</button>
-                    </div>
-                    <div class="quantidade">
-                        <p>1</p>
-                    </div>
-                    <div class="aumentar">
-                        <button>+</button>
+                <div class="counter">
+                    
+                    <div class="counter-buttons">
+                        <button onclick="diminuir()">-</button>
+                        <div id="quantidade">0</div>
+                        <button onclick="aumentar()">+</button>
                     </div>
                 </div>
                 <div class="etiqueta">
-                    <h2>No carrinho</h2>
+                    <h2>Add no carrinho</h2>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

@@ -175,7 +175,7 @@ body{
     justify-content: center;
 }
 
-#resultados .quantidade_produto{
+.counter{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -187,31 +187,11 @@ body{
     width: 100px;
 }
 
-#resultados .quantidade_produto .diminuir button{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    border:1px solid transparent;
-    background-color: transparent;
-    font-size: 15px;
-    color: black;
 
-}
 
-#resultados .quantidade_produto .aumentar button{
-
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    border:1px solid transparent;
-    background-color: transparent;
-    font-size: 15px;
-    color: black;
-
-}
 
 #resultados .etiqueta{
-    background-color: #84d56e;
+    background-color: #505050;
     border-radius: 5px;
     color: white;
     font-size: 10px;
