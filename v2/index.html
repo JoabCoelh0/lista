@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css" midia="all">
+    <title>ShoppingList</title>
+    <style>
+        #container div{
+            margin-bottom: 10px;
+        }
+        #armazem{
+            width: 500px;
+            height: 250px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div>
+            <input id="nome" type="text" placeholder=" Nome do produto">
+            <input id="valor" type="namber" placeholder="Preço">
+            <input type="submit" value="Adicionar no carrinho" onclick="addlista()">
+        </div>
+        <div id="armazem">
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

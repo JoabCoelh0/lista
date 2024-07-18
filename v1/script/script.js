@@ -13,9 +13,9 @@ document.getElementById('itemForm').addEventListener('submit', function(e) {
     itemDiv.className = 'item';
     itemDiv.innerHTML = `
         <span>${itemName} (${itemRoom})</span>
-        <span>Quantidade: ${itemQuantity}</span>
-        <span>R$ ${itemPrice.toFixed(2)}</span>
-        <span>Subtotal: R$ ${itemSubtotal.toFixed(2)}</span>
+        <span> Quantidade: ${itemQuantity}</span>
+        <span> R$ ${itemPrice.toFixed(2)}</span>
+        <span> Subtotal: R$ ${itemSubtotal.toFixed(2)}</span>
     `;
     
     shoppingList.appendChild(itemDiv);
