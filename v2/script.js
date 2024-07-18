@@ -1,4 +1,3 @@
-
 function addlista(){
     const carrinho = []
     const armazem = document.getElementById('armazem')

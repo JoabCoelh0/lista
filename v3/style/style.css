@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#principal{
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#search{
+    width: 100%;
+    background: white;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search .input{
+    width: 100%;
+    background-color: transparent;
+}
+
+#search .input input{
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#search .input input::placeholder{
+    font-size: 15px;
+    color: #262626;
+}
+
+#search .input input:focus{
+    outline: none;
+}
+
+#search .botao{
+    position: relative;
+    left: -20px;
+}
+
+#search .botao button{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+#search .botao button:hover{
+    background-color: aliceblue;
+}
+
+#resultados{
+    width: 97%;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#resultados .fotos{
+    background-color: #f5f5f5;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#resultados .fotos img{
+    width: 80px;
+}
+
+
+#resultados .card{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#resultados .informacoes .nome_produto,
+#resultados .informacoes  .classe_produto,
+#resultados .informacoes .preco_produto{
+    margin: 15px 0;
+}
+
+#resultados .informacoes .nome_produto h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#resultados .informacoes .classe_produto h2{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#resultados .informacoes .preco_produto .cifra{
+    margin-right: 10px;
+}
+
+#resultados .informacoes .preco_produto .cifra h2{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#resultados .informacoes .preco_produto{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#resultados .informacoes .preco_produto .valor h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#resultados .card .acoes{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+#resultados .excluir_produto button{
+    background-color: #f5f5f5;
+    color: #262626;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultados .quantidade_produto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fde4e3;
+    border: 1px solid #c41e16;
+    font-size: 25px;
+    color: #c41e16;
+    border-radius: 10px;
+    width: 100px;
+}
+
+#resultados .quantidade_produto .diminuir button{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border:1px solid transparent;
+    background-color: transparent;
+    font-size: 15px;
+    color: black;
+
+}
+
+#resultados .quantidade_produto .aumentar button{
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border:1px solid transparent;
+    background-color: transparent;
+    font-size: 15px;
+    color: black;
+
+}
+
+#resultados .etiqueta{
+    background-color: #84d56e;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    padding: 8px 10px;
+}
+#resultados .excluir_produto,
+#resultados.quantidade_produto,
+#resultados .etiqueta{
+    margin: 10px 0;
+}
+
