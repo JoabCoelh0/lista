@@ -7,11 +7,11 @@ function add(){
 
     resultado = document.querySelector("#resultados");
 
-    valor.innerHTML = `<input type="namber" id="valor_input">`
+    valor.innerHTML = ` <input type="number" min="0" step="0.01" placeholder="R$">`
     nomeProduto.innerHTML = `${entradaPesquisa.value}`
     resultado.style.display = "flex"
 
-
+    
 }
 
 

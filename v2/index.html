@@ -10,9 +10,19 @@
             margin-bottom: 10px;
         }
         #armazem{
-            width: 500px;
+            width: 320px;
             height: 250px;
             border: 1px solid black;
+        }
+
+        .counter-buttons{
+            display: flex;
+        }
+
+        #total{
+            width: 320px;
+            height: 60px;
+            border: solid 1px black;
         }
     </style>
 </head>
@@ -20,10 +30,25 @@
     <main id="container">
         <div>
             <input id="nome" type="text" placeholder=" Nome do produto">
-            <input id="valor" type="namber" placeholder="Preço">
+            <input type="number" name="valor" id="valor">
             <input type="submit" value="Adicionar no carrinho" onclick="addlista()">
+
+
+            <div class="counter">
+                    
+                <div class="counter-buttons">
+                    <button onclick="diminuir()">-</button>
+                    <div id="quantidade">0</div>
+                    <button onclick="aumentar()">+</button>
+                </div>
+            </div>
         </div>
+        
         <div id="armazem">
+
+        </div>
+
+        <div id="total">
 
         </div>
     </main>
