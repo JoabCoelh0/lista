@@ -2,6 +2,18 @@ const carrinho = []
 const nome = document.getElementById("nome")
 let valor = document.getElementById("valor")
 
+let contador = 0;
+function aumentar() {
+    contador++;
+    atualizaçãoValor();
+}
+function diminuir() {
+    contador--;
+    atualizaçãoValor();
+}
+function atualizaçãoValor() {
+    document.getElementById('quantidade').textContent = contador;
+}
 
 function addlista(){
     const armazem = document.getElementById('armazem')
@@ -13,26 +25,17 @@ function addlista(){
     
     carrinho.push(produto)
     
-    armazem.innerHTML += `<strong>${nome.value}</strong>, e vale um total de  ${valor.value}, levando ${contador}<br> dando um total a pagar de ${valor.value * contador}`
+    armazem.innerHTML += `<strong>${nome.value}</strong>, e vale um total de  ${valor.value}, levando ${contador} `
     
     console.log(carrinho)
 
+    
+    
+    function calculoValor(a,b){
+    
+        let total =  (valor * contador)
+    }
+    armazem.innerHTML += `O valor total a pagar é ${total.value}`
 }       
-
-let contador = 0;
-
-function aumentar() {
-    contador++;
-    atualizaçãoValor();
-}
-
-function diminuir() {
-    contador--;
-    atualizaçãoValor();
-}
-
-function atualizaçãoValor() {
-    document.getElementById('quantidade').textContent = contador;
-}
 
 
